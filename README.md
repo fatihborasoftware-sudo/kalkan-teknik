@@ -24,6 +24,7 @@ Boş bir WordPress'e, Claude ve **FB AI Engine – Claude Connector** ile adım 
 | [`prompts/3-build-prompt.md`](prompts/3-build-prompt.md) | Kiti yeni bir sohbette kurdur (firma bilgilerini doldur). |
 | [`Kalkan-build-kit.md`](Kalkan-build-kit.md) | Hazır kit: build planı, görseller, Kadence ayarları, CSS, form, footer, menü ve sayfanın blok kodu. |
 | [`assets/img/logo.png`](assets/img/logo.png) | Kalkan Teknik logosu. |
+| [`lesson-embed.html`](lesson-embed.html) | Ders sayfasındaki etkileşimli mockup görüntüleyici (Özel HTML kutusu). |
 | [`assets/video/`](assets/video/) | Güvenlik paneli için 4 kısa kamera görüntüsü (siyah-beyaz, sessiz, ~180 KB). |
 
 ## Benimle yap — adım adım

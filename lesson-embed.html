@@ -1,0 +1,80 @@
+<!-- Kalkan Teknik — interactive mockup viewer for the lesson's Custom HTML box (no backslashes: WordPress strips them on save) -->
+<div class="ktx" id="ktx">
+  <style>
+    .ktx{--ink:#0B1220;--amber:#F5A524;--line:#2A3A58;font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;margin:32px 0;color:inherit}
+    .ktx *{box-sizing:border-box}
+    .ktx-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .ktx-head h3{margin:0;font-size:22px;line-height:1.25}
+    .ktx-head p{margin:4px 0 0;opacity:.75;font-size:14px}
+    .ktx-dev{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+    .ktx-dev button{border:0;background:transparent;color:inherit;font:600 13px/1 inherit;padding:11px 16px;cursor:pointer;min-height:40px}
+    .ktx-dev button[aria-pressed="true"]{background:var(--amber);color:var(--ink)}
+    .ktx-win{background:#070C16;border:1px solid #1C2840;border-radius:20px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+    .ktx-bar{display:flex;align-items:center;gap:10px;padding:2px 6px 10px;flex-wrap:wrap}
+    .ktx-dots{display:flex;gap:6px}.ktx-dots i{width:10px;height:10px;border-radius:50%;background:#2A3A58;display:block}
+    .ktx-url{flex:1;min-width:160px;background:#111A2C;color:#9AA8BD;border-radius:8px;padding:7px 12px;font:12px/1.3 ui-monospace,Menlo,Consolas,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .ktx-open{color:var(--amber)!important;font:600 12px/1 inherit;text-decoration:none;white-space:nowrap}
+    .ktx-tabs{display:flex;gap:6px;overflow-x:auto;padding:0 4px 10px;scrollbar-width:thin}
+    .ktx-tabs button{flex:0 0 auto;border:0;border-radius:999px;background:#111A2C;color:#C6D0DE;font:600 13px/1 inherit;padding:10px 14px;cursor:pointer}
+    .ktx-tabs button[aria-pressed="true"]{background:var(--amber);color:var(--ink)}
+    .ktx-tabs button:focus-visible,.ktx-dev button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+    .ktx-stage{background:#0B1220;border-radius:12px;overflow:hidden;display:flex;justify-content:center}
+    .ktx-stage iframe{display:block;width:100%;height:760px;border:0;background:#0B1220}
+    .ktx.is-mobile .ktx-stage{background:#111A2C;padding:18px 0}
+    .ktx.is-mobile .ktx-stage iframe{width:390px;max-width:100%;height:760px;border-radius:24px;border:1px solid #2A3A58}
+    .ktx-foot{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px;font-size:14px}
+    .ktx-foot a{color:var(--amber);font-weight:700;text-decoration:none}
+    @media (max-width:640px){.ktx-stage iframe{height:620px}.ktx-win{padding:8px;border-radius:14px}}
+  </style>
+
+  <div class="ktx-head">
+    <div>
+      <h3>Kalkan Teknik — mockup'ı gez</h3>
+      <p>Derste kurduğumuz tek sayfalık site. Bölümlere atla, kamera panelini izle, mobil görünüme geç.</p>
+    </div>
+    <div class="ktx-dev" role="group" aria-label="Görünüm">
+      <button type="button" data-dev="desktop" aria-pressed="true">Masaüstü</button>
+      <button type="button" data-dev="mobile" aria-pressed="false">Mobil</button>
+    </div>
+  </div>
+
+  <div class="ktx-win">
+    <div class="ktx-bar">
+      <span class="ktx-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="ktx-url" id="ktx-url">kalkan-teknik.com/</span>
+      <a class="ktx-open" id="ktx-open" href="https://github.com/fatihborasoftware-sudo/kalkan-teknik/tree/main/mockup" target="_blank" rel="noopener">Yeni sekmede aç ↗</a>
+    </div>
+    <div class="ktx-tabs" id="ktx-tabs" role="group" aria-label="Bölümler"></div>
+    <div class="ktx-stage"><iframe id="ktx-frame" title="Kalkan Teknik mockup" loading="lazy"></iframe></div>
+  </div>
+
+  <div class="ktx-foot">
+    <a href="https://github.com/fatihborasoftware-sudo/kalkan-teknik" target="_blank" rel="noopener">Mockup, 3 prompt ve build kit (GitHub) ↗</a>
+    <a href="https://github.com/fatihborasoftware-sudo/fb-claude-connector/releases/latest" target="_blank" rel="noopener">Claude Connector'ı indir ↗</a>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ktx'); if(!root||root.dataset.ready) return; root.dataset.ready='1';
+    var BASES=['https://cdn.jsdelivr.net/gh/fatihborasoftware-sudo/kalkan-teknik@main/mockup/','https://raw.githubusercontent.com/fatihborasoftware-sudo/kalkan-teknik/main/mockup/'];
+    var CDN='https://cdn.jsdelivr.net/gh/fatihborasoftware-sudo/kalkan-teknik@main/mockup/';
+    var SECTIONS=[['top','Giriş'],['hizmetler','Hizmetler'],['surec','Nasıl çalışırız'],['bolge','Hizmet bölgesi'],['iletisim','İletişim']];
+    var frame=document.getElementById('ktx-frame'), tabs=document.getElementById('ktx-tabs'), url=document.getElementById('ktx-url'), open=document.getElementById('ktx-open'), page='';
+    function fetchPage(){ var i=0; function next(){ if(i>=BASES.length) return Promise.reject(); return fetch(BASES[i++]+'index.html').then(function(r){ if(!r.ok) throw 0; return r.text(); }).catch(next); } return next(); }
+    function mark(id){ [].forEach.call(tabs.children,function(b){ b.setAttribute('aria-pressed', b.dataset.id===id?'true':'false'); }); url.textContent='kalkan-teknik.com/'+(id==='top'?'':'#'+id); }
+    function go(id){ var d; try{ d=frame.contentDocument; }catch(e){ return; } if(!d) return; var el=d.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); mark(id); }
+    SECTIONS.forEach(function(s){ var b=document.createElement('button'); b.type='button'; b.dataset.id=s[0]; b.textContent=s[1]; b.addEventListener('click',function(){ go(s[0]); }); tabs.appendChild(b); });
+    mark('top');
+    frame.addEventListener('load',function(){ var d; try{ d=frame.contentDocument; }catch(e){ return; } if(!d) return;
+      d.addEventListener('click',function(e){ var a=e.target.closest&&e.target.closest('a'); if(!a) return; var h=a.getAttribute('href')||'';
+        if(h.charAt(0)==='#'){ e.preventDefault(); if(h.length>1) go(h.slice(1)); return; }
+        e.preventDefault(); if(/^https?:/.test(h)) window.open(h,'_blank','noopener'); });
+      d.addEventListener('submit',function(e){ e.preventDefault(); });
+      [].forEach.call(d.querySelectorAll('video'),function(v){ v.muted=true; var p=v.play(); if(p&&p.catch) p.catch(function(){}); }); });
+    fetchPage().then(function(html){ page=html.replace('<head>','<head><base href="'+CDN+'">'); frame.srcdoc=page; },
+      function(){ frame.srcdoc='<p style="font-family:sans-serif;color:#C6D0DE;padding:60px 20px;text-align:center">Sayfa yüklenemedi. GitHub üzerinden açabilirsiniz.</p>'; });
+    open.addEventListener('click',function(e){ if(!page||!window.Blob) return; e.preventDefault(); window.open(URL.createObjectURL(new Blob([page],{type:'text/html'})),'_blank'); });
+    [].forEach.call(root.querySelectorAll('.ktx-dev button'),function(b){ b.addEventListener('click',function(){ var m=b.dataset.dev==='mobile'; root.classList.toggle('is-mobile',m); [].forEach.call(root.querySelectorAll('.ktx-dev button'),function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); }); }); });
+  })();
+  </script>
+</div>
