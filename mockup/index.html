@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkan Teknik – Teknik Servis (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B1220}
+a{color:#F5A524;text-decoration:none}a:hover{color:#FFC35C}
+.k{container-type:inline-size;container-name:k}
+.k-wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.k-sec{padding:112px 0}
+.k-nav-links{display:flex;gap:30px;align-items:center}
+.k-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+.k-h1{font-size:62px}
+.k-trust{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.k-svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.k-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.k-band{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.k-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.k-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.k-foot{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:40px}
+.k-h2{font-size:46px}
+.k-hero-sec{padding:96px 0}
+.k input,.k select,.k textarea{font:inherit}
+@container k (max-width:960px){
+.k-hero,.k-two{grid-template-columns:minmax(0,1fr)}
+.k-svc,.k-steps,.k-trust{grid-template-columns:repeat(2,minmax(0,1fr))}
+.k-foot{grid-template-columns:repeat(2,minmax(0,1fr))}
+.k-nav-links{display:none}
+.k-h1{font-size:46px}.k-h2{font-size:36px}
+.k-band{flex-direction:column;align-items:flex-start}
+}
+@container k (max-width:600px){
+.k-wrap{padding:0 20px}
+.k-sec{padding:72px 0}
+.k-svc,.k-steps,.k-trust,.k-foot,.k-fields{grid-template-columns:minmax(0,1fr)}
+.k-h1{font-size:38px}.k-h2{font-size:30px}
+.k-hero-sec{padding:44px 0 64px}
+.k-ph-txt,.k-cam-loc{display:none}
+}
+</style>
+
+</head>
+<body>
+<div class="k" style="font-family: Figtree, system-ui, sans-serif; color: #E8EDF5; background: #0B1220; min-height: 100vh;">
+
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(11,18,32,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #1C2840;">
+<div class="k-wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 80px;">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; color: #E8EDF5;">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 3 5 8v9c0 8 5.6 13.4 13 16 7.4-2.6 13-8 13-16V8z" fill="#F5A524"/><path d="M19.5 10 13 20h5l-1.5 7 7-10.5h-5l1-6.5z" fill="#0B1220"/></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.1;"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: .5px;">KALKAN</span><span style="font-size: 11px; letter-spacing: 2.5px; color: #9AA8BD; font-weight: 600;">TEKNİK SERVİS</span></span>
+</a>
+<nav class="k-nav-links" aria-label="Sayfa içi">
+<a href="#hizmetler" style="color: #C6D0DE; font-weight: 500; font-size: 15px;">Hizmetler</a>
+<a href="#surec" style="color: #C6D0DE; font-weight: 500; font-size: 15px;">Nasıl çalışırız</a>
+<a href="#bolge" style="color: #C6D0DE; font-weight: 500; font-size: 15px;">Hizmet bölgesi</a>
+<a href="#iletisim" style="color: #C6D0DE; font-weight: 500; font-size: 15px;">İletişim</a>
+</nav>
+<a href="tel:+90" aria-label="Telefon: [0 5XX XXX XX XX]" style="display: inline-flex; align-items: center; gap: 10px; background: #F5A524; color: #0B1220; font-weight: 700; font-size: 15px; padding: 12px 20px; border-radius: 12px; white-space: nowrap; min-height: 44px; box-sizing: border-box;">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+<span class="k-ph-txt">[0 5XX XXX XX XX]</span>
+</a>
+</div>
+</header>
+
+
+<section id="top" class="k-sec k-hero-sec">
+<div class="k-wrap k-hero">
+<div style="display: flex; flex-direction: column; gap: 28px;">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; border: 1px solid #2A3A58; border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 600; color: #C6D0DE; letter-spacing: .3px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #3DDC84; display: block;"></span>[Şehir] ve çevresinde teknik servis</span>
+<h1 class="k-h1" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; line-height: 1.04; letter-spacing: -1.5px;">Elektrikten güvenliğe, <span style="color: #F5A524;">tek ekip</span> tek numara.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #AEBBCD; max-width: 34em;">Elektrik tesisatı, güvenlik kamerası, yangın ve hırsız alarm sistemleri, network ve Wi-Fi. Ev ve iş yeriniz için keşiften kuruluma, bakıma kadar.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px;">
+<a href="#iletisim" style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #06210F; font-weight: 700; font-size: 16px; padding: 16px 24px; border-radius: 14px; min-height: 52px; box-sizing: border-box;">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/><path d="M9 10.5c.5 2 2 3.5 4.5 4.5l1.2-1.2 1.8.8"/></svg>
+WhatsApp'tan yazın</a>
+<a href="#hizmetler" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid #2A3A58; color: #E8EDF5; font-weight: 600; font-size: 16px; padding: 16px 24px; border-radius: 14px; min-height: 52px; box-sizing: border-box;">Hizmetleri gör →</a>
+</div>
+</div>
+
+
+<div style="background: #111A2C; border: 1px solid #22304A; border-radius: 28px; padding: 20px; box-shadow: 0 40px 80px -40px rgba(0,0,0,.7);" aria-label="Güvenlik paneli örneği" role="img">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 4px 6px 16px;">
+<span style="font-weight: 700; font-size: 15px;">Güvenlik paneli</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #3DDC84; font-weight: 600;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #3DDC84; display: block;"></span>Sistem aktif</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+<div style="position: relative; aspect-ratio: 16 / 10; border-radius: 14px; background: repeating-linear-gradient(0deg, #16233A 0 2px, #13203A 2px 4px); border: 1px solid #22304A;"><span style="position: absolute; left: 12px; top: 10px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #C6D0DE;">CAM 01<span class="k-cam-loc"> · GİRİŞ</span></span><span style="position: absolute; right: 12px; top: 10px; font-size: 11px; font-weight: 700; color: #FF6B5E;">● REC</span><svg style="position: absolute; left: 50%; top: 56%; transform: translate(-50%,-50%);" width="56" height="40" viewBox="0 0 56 40" fill="none" stroke="#3A4C6E" stroke-width="2"><path d="M4 36V14l24-10 24 10v22"/><rect x="22" y="20" width="12" height="16"/></svg></div>
+<div style="position: relative; aspect-ratio: 16 / 10; border-radius: 14px; background: repeating-linear-gradient(0deg, #16233A 0 2px, #13203A 2px 4px); border: 1px solid #22304A;"><span style="position: absolute; left: 12px; top: 10px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #C6D0DE;">CAM 02<span class="k-cam-loc"> · OTOPARK</span></span><span style="position: absolute; right: 12px; top: 10px; font-size: 11px; font-weight: 700; color: #FF6B5E;">● REC</span><svg style="position: absolute; left: 50%; top: 58%; transform: translate(-50%,-50%);" width="64" height="30" viewBox="0 0 64 30" fill="none" stroke="#3A4C6E" stroke-width="2"><path d="M6 22h52M10 22l6-12h32l6 12"/><circle cx="18" cy="24" r="4"/><circle cx="46" cy="24" r="4"/></svg></div>
+<div style="position: relative; aspect-ratio: 16 / 10; border-radius: 14px; background: repeating-linear-gradient(0deg, #16233A 0 2px, #13203A 2px 4px); border: 1px solid #22304A;"><span style="position: absolute; left: 12px; top: 10px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #C6D0DE;">CAM 03<span class="k-cam-loc"> · DEPO</span></span><span style="position: absolute; right: 12px; top: 10px; font-size: 11px; font-weight: 700; color: #FF6B5E;">● REC</span><svg style="position: absolute; left: 50%; top: 58%; transform: translate(-50%,-50%);" width="56" height="34" viewBox="0 0 56 34" fill="none" stroke="#3A4C6E" stroke-width="2"><rect x="4" y="14" width="18" height="16"/><rect x="26" y="6" width="26" height="24"/></svg></div>
+<div style="position: relative; aspect-ratio: 16 / 10; border-radius: 14px; background: repeating-linear-gradient(0deg, #16233A 0 2px, #13203A 2px 4px); border: 1px solid #22304A;"><span style="position: absolute; left: 12px; top: 10px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #C6D0DE;">CAM 04<span class="k-cam-loc"> · BAHÇE</span></span><span style="position: absolute; right: 12px; top: 10px; font-size: 11px; font-weight: 700; color: #FF6B5E;">● REC</span><svg style="position: absolute; left: 50%; top: 58%; transform: translate(-50%,-50%);" width="56" height="34" viewBox="0 0 56 34" fill="none" stroke="#3A4C6E" stroke-width="2"><path d="M14 30V18M42 30V14"/><circle cx="14" cy="12" r="8"/><circle cx="42" cy="9" r="7"/><path d="M2 30h52"/></svg></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px;">
+<div style="background: #0D1526; border: 1px solid #22304A; border-radius: 14px; padding: 14px;"><div style="font-size: 12px; color: #9AA8BD; font-weight: 600;">Hırsız alarmı</div><div style="margin-top: 6px; font-weight: 700; font-size: 15px; color: #3DDC84;">Devrede</div></div>
+<div style="background: #0D1526; border: 1px solid #22304A; border-radius: 14px; padding: 14px;"><div style="font-size: 12px; color: #9AA8BD; font-weight: 600;">Yangın paneli</div><div style="margin-top: 6px; font-weight: 700; font-size: 15px;">Normal</div></div>
+<div style="background: #0D1526; border: 1px solid #22304A; border-radius: 14px; padding: 14px;"><div style="font-size: 12px; color: #9AA8BD; font-weight: 600;">Ağ / Wi-Fi</div><div style="margin-top: 6px; font-weight: 700; font-size: 15px;">Bağlı</div></div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section style="border-top: 1px solid #1C2840; border-bottom: 1px solid #1C2840; background: #0D1526;">
+<div class="k-wrap k-trust" style="padding-top: 32px; padding-bottom: 32px;">
+<div style="display: flex; gap: 14px; align-items: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div><div style="font-weight: 700;">Yerinde keşif</div><div style="font-size: 14px; color: #9AA8BD;">İhtiyacı görerek planlarız</div></div></div>
+<div style="display: flex; gap: 14px; align-items: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18l-5-3-5 3z"/></svg><div><div style="font-weight: 700;">Yazılı teklif</div><div style="font-size: 14px; color: #9AA8BD;">Kalem kalem, sürprizsiz</div></div></div>
+<div style="display: flex; gap: 14px; align-items: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><div><div style="font-weight: 700;">Temiz işçilik</div><div style="font-size: 14px; color: #9AA8BD;">Kablo düzeni, etiketleme</div></div></div>
+<div style="display: flex; gap: 14px; align-items: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><div style="font-weight: 700;">Bakım ve destek</div><div style="font-size: 14px; color: #9AA8BD;">Kurulumdan sonra da yanınızda</div></div></div>
+</div>
+</section>
+
+
+<section id="hizmetler" class="k-sec" style="background: #F4F2ED; color: #0B1220;">
+<div class="k-wrap" style="display: flex; flex-direction: column; gap: 52px;">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #9A5B00;">HİZMETLER</span>
+<h2 class="k-h2" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; line-height: 1.1; letter-spacing: -1px;">Altı uzmanlık, tek servis</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #46526A;">Ayrı ayrı usta aramayın. Tesisattan kameraya, alarmdan internete kadar hepsini aynı ekip kurar ve aynı ekip bakımını yapar.</p>
+</div>
+<div class="k-svc">
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Elektrik tesisatı</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">Yeni tesisat, pano yenileme, arıza tespiti ve aydınlatma.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— Sigorta ve kaçak akım panosu</li><li>— Priz, anahtar, hat çekimi</li><li>— LED ve dış aydınlatma</li></ul>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="14" height="8" rx="2"/><path d="m16 9 5-2v8l-5-2"/><path d="M6 14v4H3"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Güvenlik kamerası</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">IP ve analog kamera kurulumu, kayıt cihazı, telefondan izleme.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— İç ve dış mekân kamera</li><li>— NVR / DVR kurulumu</li><li>— Mobil uygulamadan canlı izleme</li></ul>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2.5 1.2-4 2.5-5 0 2 1 3.5 2.5 3.5 0-3.5-1-6 0-8.5z"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Yangın alarm sistemi</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">Duman ve ısı dedektörleri, yangın paneli, sesli-ışıklı uyarı.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— Konvansiyonel ve adresli panel</li><li>— Dedektör ve buton montajı</li><li>— Periyodik test ve bakım</li></ul>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10 11V9a2 2 0 0 1 4 0v2"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Hırsız alarm sistemi</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">Hareket ve kapı-pencere sensörleri, siren, uzaktan kurma.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— Kablolu ve kablosuz sistem</li><li>— Telefondan kur / devre dışı bırak</li><li>— Alarm anında bildirim</li></ul>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Network ve kablolama</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">Ofis ve ev ağı, kabin düzeni, switch ve modem kurulumu.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— Cat6 data kablolama</li><li>— Rack kabin ve patch panel</li><li>— Ağ arıza tespiti</li></ul>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #E3DED3; border-radius: 22px; padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #0B1220; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg></span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Wi-Fi çözümleri</h3>
+<p style="margin: 0; color: #46526A; line-height: 1.6;">Çekmeyen odalara son. Mesh, erişim noktası ve misafir ağı.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #2A3448;"><li>— Kapsama ölçümü</li><li>— Mesh ve access point</li><li>— Ayrı misafir ağı</li></ul>
+</article>
+</div>
+</div>
+</section>
+
+
+<section id="surec" class="k-sec">
+<div class="k-wrap" style="display: flex; flex-direction: column; gap: 52px;">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F5A524;">NASIL ÇALIŞIRIZ</span>
+<h2 class="k-h2" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; line-height: 1.1; letter-spacing: -1px;">Dört adımda bitmiş iş</h2>
+</div>
+<ol class="k-steps" style="margin: 0; padding: 0; list-style: none;">
+<li style="border-top: 2px solid #F5A524; padding-top: 22px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 15px; font-weight: 600; color: #F5A524;">01</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Keşif</span><span style="color: #AEBBCD; line-height: 1.6;">Yerinde bakar, ihtiyacınızı ve mevcut tesisatı not alırız.</span></li>
+<li style="border-top: 2px solid #2A3A58; padding-top: 22px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 15px; font-weight: 600; color: #F5A524;">02</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Teklif</span><span style="color: #AEBBCD; line-height: 1.6;">Malzeme ve işçiliği ayrı ayrı yazan net bir teklif.</span></li>
+<li style="border-top: 2px solid #2A3A58; padding-top: 22px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 15px; font-weight: 600; color: #F5A524;">03</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Kurulum</span><span style="color: #AEBBCD; line-height: 1.6;">Söz verilen günde, temiz ve düzenli montaj.</span></li>
+<li style="border-top: 2px solid #2A3A58; padding-top: 22px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 15px; font-weight: 600; color: #F5A524;">04</span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 23px; font-weight: 600;">Teslim ve destek</span><span style="color: #AEBBCD; line-height: 1.6;">Sistemi gösterir, kullanımı anlatır, bakımı üstleniriz.</span></li>
+</ol>
+
+
+<div class="k-band" style="background: #F5A524; color: #0B1220; border-radius: 28px; padding: 44px 48px;">
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 700; line-height: 1.15;">Arıza mı var, yeni kurulum mu?</span>
+<span style="font-size: 17px; font-weight: 500;">Fotoğrafını WhatsApp'tan gönderin, size hızlıca dönelim.</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a href="#iletisim" style="display: inline-flex; align-items: center; gap: 10px; background: #0B1220; color: #FFFFFF; font-weight: 700; font-size: 16px; padding: 16px 24px; border-radius: 14px; min-height: 52px; box-sizing: border-box;">WhatsApp'tan yazın</a>
+<a href="tel:+90" style="display: inline-flex; align-items: center; gap: 10px; border: 2px solid #0B1220; color: #0B1220; font-weight: 700; font-size: 16px; padding: 14px 22px; border-radius: 14px; min-height: 52px; box-sizing: border-box;">Hemen arayın</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="bolge" class="k-sec" style="background: #F4F2ED; color: #0B1220;">
+<div class="k-wrap k-two" style="align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 22px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #9A5B00;">HİZMET BÖLGESİ</span>
+<h2 class="k-h2" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; line-height: 1.1; letter-spacing: -1px;">[Şehir] ve çevresindeyiz</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #46526A;">[İlçe 1], [İlçe 2], [İlçe 3] ve yakın bölgelere servis veriyoruz. Bölgeniz listede yoksa yine de yazın.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px;">
+<div style="display: flex; gap: 12px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A5B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>[Açık adres]</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A5B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Hafta içi [09:00–19:00] · Cumartesi [09:00–17:00]</span></div>
+</div>
+</div>
+<div style="position: relative; border-radius: 28px; overflow: hidden; border: 1px solid #E3DED3; aspect-ratio: 4 / 3; background-color: #E9E5DC; background-image: repeating-linear-gradient(0deg, transparent 0 46px, #DDD7CB 46px 48px), repeating-linear-gradient(90deg, transparent 0 46px, #DDD7CB 46px 48px);" role="img" aria-label="Harita yeri">
+<div style="position: absolute; left: -10%; top: 46%; width: 120%; height: 18px; background: #FFFFFF; transform: rotate(-12deg);"></div>
+<div style="position: absolute; left: 58%; top: -10%; width: 14px; height: 120%; background: #FFFFFF; transform: rotate(8deg);"></div>
+<div style="position: absolute; left: 50%; top: 44%; transform: translate(-50%,-100%); display: flex; flex-direction: column; align-items: center; gap: 8px;">
+<span style="background: #0B1220; color: #FFFFFF; font-size: 13px; font-weight: 700; padding: 8px 14px; border-radius: 10px; white-space: nowrap;">Kalkan Teknik</span>
+<svg width="40" height="48" viewBox="0 0 24 28" aria-hidden="true"><path d="M12 27s10-8.6 10-16A10 10 0 0 0 2 11c0 7.4 10 16 10 16z" fill="#F5A524" stroke="#0B1220" stroke-width="1.5"/><circle cx="12" cy="11" r="3.5" fill="#0B1220"/></svg>
+</div>
+<span style="position: absolute; left: 16px; bottom: 16px; background: rgba(255,255,255,.92); color: #46526A; font-size: 12px; font-weight: 600; padding: 6px 10px; border-radius: 8px;">Google Haritalar (WordPress'te gömülü)</span>
+<a href="#bolge" style="position: absolute; right: 16px; bottom: 16px; background: #0B1220; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 12px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box;">Yol tarifi al ↗</a>
+</div>
+</div>
+</section>
+
+
+<section id="iletisim" class="k-sec">
+<div class="k-wrap k-two">
+<div style="display: flex; flex-direction: column; gap: 22px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F5A524;">İLETİŞİM</span>
+<h2 class="k-h2" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; line-height: 1.1; letter-spacing: -1px;">Keşif için bize ulaşın</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #AEBBCD;">Formu doldurun ya da doğrudan arayın. Ne yaptırmak istediğinizi kısaca yazmanız yeterli.</p>
+<a href="tel:+90" style="display: flex; gap: 16px; align-items: center; background: #111A2C; border: 1px solid #22304A; border-radius: 18px; padding: 20px; color: #E8EDF5;"><span style="width: 48px; height: 48px; border-radius: 12px; background: #F5A524; display: flex; align-items: center; justify-content: center; flex: none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B1220" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span><span style="display: block; font-size: 13px; color: #9AA8BD; font-weight: 600;">Telefon</span><span style="display: block; font-size: 20px; font-weight: 700;">[0 5XX XXX XX XX]</span></span></a>
+<a href="#iletisim" style="display: flex; gap: 16px; align-items: center; background: #111A2C; border: 1px solid #22304A; border-radius: 18px; padding: 20px; color: #E8EDF5;"><span style="width: 48px; height: 48px; border-radius: 12px; background: #25D366; display: flex; align-items: center; justify-content: center; flex: none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06210F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/></svg></span><span><span style="display: block; font-size: 13px; color: #9AA8BD; font-weight: 600;">WhatsApp</span><span style="display: block; font-size: 20px; font-weight: 700;">Mesaj gönderin</span></span></a>
+<a href="#iletisim" style="display: flex; gap: 16px; align-items: center; background: #111A2C; border: 1px solid #22304A; border-radius: 18px; padding: 20px; color: #E8EDF5;"><span style="width: 48px; height: 48px; border-radius: 12px; background: #22304A; display: flex; align-items: center; justify-content: center; flex: none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8EDF5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><span style="display: block; font-size: 13px; color: #9AA8BD; font-weight: 600;">E-posta</span><span style="display: block; font-size: 20px; font-weight: 700;">[ornek@firma.com]</span></span></a>
+</div>
+
+<form style="background: #111A2C; border: 1px solid #22304A; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 18px;">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 700;">Keşif talebi</span>
+<div class="k-fields">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #C6D0DE;">Ad soyad<input type="text" style="background: #0B1220; border: 1px solid #2A3A58; border-radius: 12px; padding: 14px; color: #E8EDF5; min-height: 48px; box-sizing: border-box;"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #C6D0DE;">Telefon<input type="tel" style="background: #0B1220; border: 1px solid #2A3A58; border-radius: 12px; padding: 14px; color: #E8EDF5; min-height: 48px; box-sizing: border-box;"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #C6D0DE;">Hizmet
+<select style="background: #0B1220; border: 1px solid #2A3A58; border-radius: 12px; padding: 14px; color: #E8EDF5; min-height: 48px; box-sizing: border-box;">
+<option>Seçin</option><option>Elektrik tesisatı</option><option>Güvenlik kamerası</option><option>Yangın alarm sistemi</option><option>Hırsız alarm sistemi</option><option>Network ve kablolama</option><option>Wi-Fi çözümleri</option>
+</select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #C6D0DE;">Mesajınız<textarea rows="4" style="background: #0B1220; border: 1px solid #2A3A58; border-radius: 12px; padding: 14px; color: #E8EDF5; resize: vertical; box-sizing: border-box;"></textarea></label>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #AEBBCD; line-height: 1.5;"><input type="checkbox" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #F5A524; flex: none;">Bilgilerimin bu talebi yanıtlamak için kullanılmasını kabul ediyorum (KVKK).</label>
+<button type="button" style="background: #F5A524; color: #0B1220; border: 0; border-radius: 14px; padding: 16px; font: 700 16px Figtree, sans-serif; cursor: pointer; min-height: 52px;">Talebi gönder</button>
+</form>
+</div>
+</section>
+
+
+<footer style="background: #070C16; border-top: 1px solid #1C2840;">
+<div class="k-wrap k-foot" style="padding-top: 64px; padding-bottom: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<span style="display: flex; align-items: center; gap: 12px;"><svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 3 5 8v9c0 8 5.6 13.4 13 16 7.4-2.6 13-8 13-16V8z" fill="#F5A524"/><path d="M19.5 10 13 20h5l-1.5 7 7-10.5h-5l1-6.5z" fill="#0B1220"/></svg><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px;">KALKAN Teknik</span></span>
+<p style="margin: 0; color: #9AA8BD; line-height: 1.6; max-width: 30em;">Elektrik, güvenlik ve ağ sistemlerinde keşif, kurulum ve bakım.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><span style="font-weight: 700; margin-bottom: 4px;">Hizmetler</span><a href="#hizmetler" style="color: #9AA8BD;">Elektrik tesisatı</a><a href="#hizmetler" style="color: #9AA8BD;">Güvenlik kamerası</a><a href="#hizmetler" style="color: #9AA8BD;">Yangın ve hırsız alarm</a><a href="#hizmetler" style="color: #9AA8BD;">Network ve Wi-Fi</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><span style="font-weight: 700; margin-bottom: 4px;">Sayfa</span><a href="#surec" style="color: #9AA8BD;">Nasıl çalışırız</a><a href="#bolge" style="color: #9AA8BD;">Hizmet bölgesi</a><a href="#iletisim" style="color: #9AA8BD;">İletişim</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><span style="font-weight: 700; margin-bottom: 4px;">İletişim</span><span style="color: #9AA8BD;">[0 5XX XXX XX XX]</span><span style="color: #9AA8BD;">[ornek@firma.com]</span><span style="color: #9AA8BD;">[Açık adres]</span></div>
+</div>
+<div class="k-wrap" style="padding-top: 20px; padding-bottom: 28px; border-top: 1px solid #1C2840; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #7F8DA3;"><span>© 2026 Kalkan Teknik</span><span>KVKK aydınlatma metni</span></div>
+</footer>
+
+
+<a href="#iletisim" aria-label="WhatsApp'tan yazın" style="position: fixed; right: 24px; bottom: 24px; z-index: 20; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 14px 30px -8px rgba(37,211,102,.55);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#06210F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/><path d="M9 10.5c.5 2 2 3.5 4.5 4.5l1.2-1.2 1.8.8"/></svg></a>
+
+</div>
+</body>
+</html>
