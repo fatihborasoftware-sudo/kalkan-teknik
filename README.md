@@ -21,6 +21,8 @@ Boş bir WordPress'e, Claude ve **FB AI Engine – Claude Connector** ile adım 
 | [`prompts/1-mockup-prompt.md`](prompts/1-mockup-prompt.md) | Claude'a kendi firman için tasarım yaptır. |
 | [`prompts/2-build-kit-prompt.md`](prompts/2-build-kit-prompt.md) | Onaylanan tasarımı kurulum kitine çevir. |
 
+| [`assets/video/`](assets/video/) | Güvenlik paneli için 4 kısa kamera görüntüsü (siyah-beyaz, sessiz, ~180 KB). |
+
 Build kit ve kurulum promptu, derste ilerledikçe buraya eklenecek.
 
 ## Benimle yap — adım adım
@@ -40,6 +42,15 @@ Build kit ve kurulum promptu, derste ilerledikçe buraya eklenecek.
 - Contact Form 7
 - WPvivid Backup (kurulumdan önce yedek)
 - WhatsApp butonu ve harita: eklentisiz, sayfanın içinde
+
+## Görüntü kaynakları
+
+Kamera görüntüleri [Pexels](https://www.pexels.com/license/)'ten, ücretsiz lisansla. Kısaltıldı, siyah-beyaz yapıldı.
+
+- CAM 01 — [People Shopping Inside A Mall](https://www.pexels.com/video/people-shopping-inside-a-mall-4750083/)
+- CAM 02 — [A Footage of a Covered Parking Lot](https://www.pexels.com/video/a-footage-of-a-covered-parking-lot-9100884/)
+- CAM 03 — [Men Working in a Warehouse](https://www.pexels.com/video/men-working-in-a-warehouse-4281236/)
+- CAM 04 — [Couple Standing In Front of a House](https://www.pexels.com/video/couple-standing-in-front-of-a-house-7578721/)
 
 ---
 
