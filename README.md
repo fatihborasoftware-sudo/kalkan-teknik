@@ -21,9 +21,10 @@ Boş bir WordPress'e, Claude ve **FB AI Engine – Claude Connector** ile adım 
 | [`prompts/1-mockup-prompt.md`](prompts/1-mockup-prompt.md) | Claude'a kendi firman için tasarım yaptır. |
 | [`prompts/2-build-kit-prompt.md`](prompts/2-build-kit-prompt.md) | Onaylanan tasarımı kurulum kitine çevir. |
 
+| [`prompts/3-build-prompt.md`](prompts/3-build-prompt.md) | Kiti yeni bir sohbette kurdur (firma bilgilerini doldur). |
+| [`Kalkan-build-kit.md`](Kalkan-build-kit.md) | Hazır kit: build planı, görseller, Kadence ayarları, CSS, form, footer, menü ve sayfanın blok kodu. |
+| [`assets/img/logo.png`](assets/img/logo.png) | Kalkan Teknik logosu. |
 | [`assets/video/`](assets/video/) | Güvenlik paneli için 4 kısa kamera görüntüsü (siyah-beyaz, sessiz, ~180 KB). |
-
-Build kit ve kurulum promptu, derste ilerledikçe buraya eklenecek.
 
 ## Benimle yap — adım adım
 
@@ -34,7 +35,10 @@ Build kit ve kurulum promptu, derste ilerledikçe buraya eklenecek.
 5. **Claude'u bağla:** Ayarlar → Connectors → Add custom connector → Setup'taki adresi yapıştır (`https://siteniz.com/wp-json/fbsa/v1/mcp`) → Connect → **Allow**.
 6. **Mockup:** yeni bir sohbette [1. prompt](prompts/1-mockup-prompt.md)'u kendi bilgilerinle gönder, beğenene kadar düzelttir.
 7. **Kit:** aynı sohbette [2. prompt](prompts/2-build-kit-prompt.md)'u gönder.
-8. **Kur:** yeni bir sohbette kiti ekle, kurulum promptunu yapıştır, build planı bir kez onayla, **Watch Me Live**'dan izle.
+8. **Kur:** yeni bir sohbette [kiti](Kalkan-build-kit.md) ekle, [3. prompt](prompts/3-build-prompt.md)'u firma bilgilerinle doldurup gönder, build planı bir kez onayla, **Watch Me Live**'dan izle.
+9. **Harita:** Google Haritalar → Paylaş → Harita yerleştir → HTML'yi kopyala → WordPress'te Anasayfa'daki harita kartının (Özel HTML) yerine yapıştır. (Kitte 9. bölüm.)
+
+> Aynı siteyi mi kuruyorsun? 6. ve 7. adımı atla, doğrudan bu repodaki kiti kullan.
 
 ## Kullanılanlar (hepsi ücretsiz)
 

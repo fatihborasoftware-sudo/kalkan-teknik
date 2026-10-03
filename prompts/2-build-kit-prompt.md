@@ -1,6 +1,6 @@
 # 2 — Build kit prompt
 
-Send this in the same chat once you approve the mockup. Claude turns the mockup into one file with everything the build needs. The finished kit for this project will be added here as we build.
+Send this in the same chat once you approve the mockup. Claude turns the mockup into one file with everything the build needs. The finished kit for this project is [`../Kalkan-build-kit.md`](../Kalkan-build-kit.md).
 
 ## Türkçe
 
